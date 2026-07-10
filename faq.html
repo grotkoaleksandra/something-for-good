@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<script>document.documentElement.className += " js";</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FAQ — Something For Good</title>
+<meta name="description" content="Answers to common questions about Something For Good's small unrestricted grants, how nominations work, and who we support." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+  .faq-hero{padding:72px 0 44px;
+    background:linear-gradient(180deg,rgba(233,161,43,.10),rgba(250,244,230,0) 70%)}
+  .faq-hero h1{font-family:var(--display);font-weight:600;
+    font-size:clamp(2.4rem,5.5vw,4rem);line-height:1.02;letter-spacing:-.02em;
+    margin:18px 0 20px;max-width:16ch;font-variation-settings:"SOFT" 30,"WONK" 1}
+  .faq-hero p{font-size:clamp(1.05rem,1.8vw,1.28rem);max-width:44ch;color:var(--ink-soft)}
+  .faq-list{padding:24px 0 96px;max-width:760px}
+  .faq-item{border-top:1px solid var(--line)}
+  .faq-item:last-child{border-bottom:1px solid var(--line)}
+  .faq-q{width:100%;display:flex;align-items:flex-start;justify-content:space-between;gap:24px;
+    background:none;border:none;cursor:pointer;text-align:left;padding:28px 0;
+    font-family:var(--display);font-weight:600;font-size:clamp(1.15rem,2.2vw,1.42rem);
+    color:var(--ink);letter-spacing:-.01em;line-height:1.25}
+  .faq-q:focus-visible{outline:2px solid var(--marigold-deep);outline-offset:4px;border-radius:6px}
+  .faq-icon{flex:none;width:22px;height:22px;margin-top:5px;position:relative}
+  .faq-icon::before,.faq-icon::after{content:"";position:absolute;background:var(--clay);
+    border-radius:2px;transition:transform .28s ease}
+  .faq-icon::before{top:10px;left:0;width:22px;height:2px}
+  .faq-icon::after{left:10px;top:0;width:2px;height:22px}
+  .faq-item.open .faq-icon::after{transform:rotate(90deg)}
+  .faq-a{overflow:hidden;max-height:0;transition:max-height .32s ease}
+  .faq-item.open .faq-a{max-height:640px}
+  .faq-a p{color:var(--ink-soft);font-size:1.06rem;line-height:1.62;
+    max-width:60ch;padding:0 0 28px}
+  .faq-a p + p{padding-top:0;margin-top:-12px;padding-bottom:28px}
+  .faq-a a{color:var(--clay);text-decoration:underline}
+  .faq-foot{margin-top:56px;background:var(--paper-2);border:1px solid var(--line);
+    border-radius:24px;padding:40px 36px;text-align:center;box-shadow:var(--shadow)}
+  .faq-foot h2{font-family:var(--display);font-weight:600;font-size:1.9rem;
+    letter-spacing:-.015em;margin-bottom:12px}
+  .faq-foot p{color:var(--ink-soft);max-width:44ch;margin:0 auto 26px;font-size:1.06rem}
+  @media (prefers-reduced-motion:reduce){
+    .faq-a{transition:none}
+    .faq-icon::before,.faq-icon::after{transition:none}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Something For Good home">Something For Good</a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html#grant">The grant</a>
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#stories">Stories</a>
+      <a href="faq.html">FAQ</a>
+      <a class="btn btn-gold" href="index.html#contact">Nominate someone</a>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="faq-hero">
+    <div class="wrap">
+      <p class="eyebrow reveal">Questions</p>
+      <h1 class="reveal d1">Things people ask us.</h1>
+      <p class="reveal d2">Short answers, plainly given. If yours is not here, write to us and a person will reply.</p>
+    </div>
+  </section>
+
+  <section class="wrap faq-list">
+
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false" aria-controls="a1">
+        <span>How much is a grant, and what can it be spent on?</span>
+        <span class="faq-icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-a" id="a1" role="region">
+        <p>Grants are between $1,000 and $2,500, given once, directly to one person. They are unrestricted, which means there are no conditions attached and no receipts to send back. The person who receives it decides what it is for.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false" aria-controls="a2">
+        <span>Who can be nominated?</span>
+        <span class="faq-icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-a" id="a2" role="region">
+        <p>Anyone quietly making life better for the people near them. We back two kinds of people: those who keep showing up for others over time, and those facing a hard moment when a small amount of money changes what happens next.</p>
+        <p>Grants go to individuals, not to organizations.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false" aria-controls="a3">
+        <span>Can I nominate myself?</span>
+        <span class="faq-icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-a" id="a3" role="region">
+        <p>Nominations usually come from someone else, because the people we look for rarely put themselves forward. If you are in a hard moment and no one is going to nominate you, write to us anyway.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false" aria-controls="a4">
+        <span>What happens after I submit a nomination?</span>
+        <span class="faq-icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-a" id="a4" role="region">
+        <p>We read every nomination. If we move forward, we reach out to you first, then to the person you nominated. Vetting is short and respectful. The people closest to a community usually know who is holding it together, and we mostly confirm what they already see.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false" aria-controls="a5">
+        <span>How long does it take to hear back?</span>
+        <span class="faq-icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-a" id="a5" role="region">
+        <p>We are small, and we read nominations as they arrive. If we are moving forward we will contact you. If we are not, we will still let you know rather than leaving you waiting.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false" aria-controls="a6">
+        <span>Does the person have to pay taxes on the grant?</span>
+        <span class="faq-icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-a" id="a6" role="region">
+        <p>Tax treatment depends on individual circumstances, and we are not able to give tax advice. We recommend that recipients speak with a tax professional about their own situation.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false" aria-controls="a7">
+        <span>Are donations to Something For Good tax deductible?</span>
+        <span class="faq-icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-a" id="a7" role="region">
+        <p>Something For Good is a registered 501(c)(3) nonprofit, so donations are generally tax deductible to the extent allowed by law. Your own deduction depends on your circumstances, and a tax professional can tell you what applies to you.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false" aria-controls="a8">
+        <span>How is Something For Good funded?</span>
+        <span class="faq-icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-a" id="a8" role="region">
+        <p>Through individual donors who believe that good is worth backing. If you would like to give, or to fund a specific grant, write to <a href="mailto:action@somethingforgood.org">action@somethingforgood.org</a>.</p>
+      </div>
+    </div>
+
+    <div class="faq-item reveal">
+      <button class="faq-q" aria-expanded="false" aria-controls="a9">
+        <span>Where do you give grants?</span>
+        <span class="faq-icon" aria-hidden="true"></span>
+      </button>
+      <div class="faq-a" id="a9" role="region">
+        <p>Across the United States. Our leads come from teachers, nurses, social workers, and neighborhood organizers who already know who is making a difference where they live.</p>
+      </div>
+    </div>
+
+    <div class="faq-foot reveal">
+      <h2>Still have a question?</h2>
+      <p>Write to us. A person reads every message, and a person will write back.</p>
+      <a class="btn btn-gold" href="mailto:action@somethingforgood.org">Email us</a>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">Something For Good</div>
+        <p style="color:#C8BBA4;max-width:32ch;margin-top:14px">Thank you for believing that good is worth backing.</p>
+      </div>
+      <div class="foot-meta">
+        <a href="mailto:action@somethingforgood.org">action@somethingforgood.org</a><br>
+        Santa Monica, CA<br>
+        somethingforgood.org
+      </div>
+    </div>
+    <hr class="foot-rule" />
+    <div class="foot-fine">
+      <span>Something For Good · A registered 501(c)(3) nonprofit</span>
+      <span>© 2026 Something For Good</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.14});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  const toggle=document.getElementById('menuToggle');
+  const links=document.getElementById('navLinks');
+  toggle.addEventListener('click',()=>{
+    const open=links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded',open);
+  });
+  links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+    links.classList.remove('open');toggle.setAttribute('aria-expanded',false);
+  }));
+
+  document.querySelectorAll('.faq-q').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const item=btn.closest('.faq-item');
+      const open=item.classList.toggle('open');
+      btn.setAttribute('aria-expanded',open);
+    });
+  });
+</script>
+</body>
+</html>
