@@ -39,6 +39,7 @@
   }
 
   /* ---------- HEADER ---------- */
+  section[id], main[id]{scroll-margin-top:96px}
   header{
     position:sticky;top:0;z-index:50;
     backdrop-filter:blur(10px);
