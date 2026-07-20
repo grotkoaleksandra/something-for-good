@@ -239,7 +239,8 @@
         form.style.display='none';
         const ok=document.getElementById('formSuccess');
         ok.classList.add('show');
-        ok.scrollIntoView({behavior:'smooth',block:'center'});
+        const sec=document.getElementById('contact');
+        (sec||ok).scrollIntoView({behavior:'smooth',block:'start'});
       }catch(_){
         btn.disabled=false; btn.textContent='Send nomination';
         err.textContent='That did not send. Please try again, or email somethingforgoodfund@gmail.com.';
